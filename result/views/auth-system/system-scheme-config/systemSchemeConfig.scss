@@ -1,0 +1,43 @@
+.tree_container{
+    height: 100%;
+    display: flex;
+    background-color: #fff;
+
+    .tree_left_wrapper{
+        width: 30%;
+        box-sizing: border-box;
+        padding: 20px;
+        border-right: 1px solid lightgrey;
+    }
+    .search_wrapper{
+        padding-bottom: 20px;
+    }
+    .tree_scroll{
+        height: calc(100% - 60px);
+        overflow: auto;
+    }
+    
+    .form_right_wrapper{
+        width: 70%;
+        padding: 20px;
+        overflow: auto;
+    }
+
+    .form_top_operate{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 20px;
+        max-width: 600px;
+        overflow: auto;
+        &>div,&>button{
+            flex-shrink: 0;
+        }
+
+    }
+
+    .tree_form{
+        height: calc(100% - 60px);
+        overflow: auto;
+    }
+}
