@@ -27,6 +27,8 @@ import request from '@/router/axios';
 
 const baseUrl = ${baseUrl}
 
+export const searchUrl = baseUrl + '/list'
+
 // 获取${title}列表
 export const get${fnName}List = (params)=>{
     return request({

@@ -247,7 +247,7 @@ export default {
 }
 
 /**
- * 生成 js 文件内容--------
+ * 生成 scss 文件内容--------
  */
 function getTreePageCss(singleConfig){
     // 文件名 --创建 三个 文件
