@@ -1,16 +1,16 @@
 // type: 类型：tree or list
 const config = [
     {
-        topMenu : 'auth-system',
-        subMenu : 'system-scheme-config',
-        title: '认证系统设置',
-        baseUrl : "process.env.VUE_APP_BASE_API_URL + '/blade-atte/atte-app-setting'",
+        topMenu : 'article',
+        subMenu : 'article-reply',
+        title: '文章留言',
+        baseUrl : "process.env.VUE_APP_BASE_API_URL + '/blade-acticle/article-reply'",
         type:'tree',        //树状结构
         mainField:[
-            { name:'schemeName', text:'方案名称', type:'text' },
-            { name:'screenLink', text:'大屏跳转链接', type:'text' },
+            { name:'articleClassName', text:'文章分类名称', type:'text' },
+            { name:'parentClassId', text:'父级分类', type:'text' },
         ]
-    }
+    },
 ]
 
 

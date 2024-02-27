@@ -70,10 +70,10 @@ function getTreePageTemplate(singleConfig){
 </template>
 
 <script>
-import ${ variable }Config from "./${ variable }Config.js";
+import ${ variable } from "./${ variable }.js";
 
 export default {
-    mixins: [${ variable }Config],
+    mixins: [${ variable }],
     components: {
 
     },
@@ -81,11 +81,11 @@ export default {
 </script>
 
 <style scoped>
-@import "../../../asset/less/miebase.less";
+@import "~@/asset/less/miebase.less";
 </style>
 
 <style lang="scss" scoped>
-@import "./${ variable }Config.scss";
+@import "./${ variable }.scss";
 </style>`
     return content
 }
@@ -211,6 +211,7 @@ export default {
     nodeClick(data) {
       if(data.sourceData){
           this.formData = data.sourceData;
+          this.$refs['form'].clearValidate()
       }
     },
 
